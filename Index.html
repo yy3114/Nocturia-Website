@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夜尿症 - 症狀、原因與治療</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin: 20px 0 10px 0;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+        
+        p, li {
+            margin-bottom: 12px;
+            color: #555;
+            text-align: justify;
+        }
+        
+        ul {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        li::marker {
+            color: #667eea;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .warning {
+            background: linear-gradient(120deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 152, 0, 0.1) 100%);
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(120deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌙 夜尿症 Nocturia</h1>
+            <p class="subtitle">了解夜間頻尿的原因、症狀與治療方法</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">30%</span>
+                    <span class="stat-label">65歲以上成人患病率</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">每晚起床次數標準</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">80%</span>
+                    <span class="stat-label">可透過治療改善</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="card">
+                <h2><span class="icon">📋</span>什麼是夜尿症？</h2>
+                <p>夜尿症（Nocturia）是指在夜間睡眠期間需要起床排尿2次或以上的症狀。這不僅會干擾睡眠品質，還可能影響日常生活和身心健康。</p>
+                
+                <div class="highlight">
+                    <strong>診斷標準：</strong><br>
+                    每晚需要起床排尿2次或以上，且持續數週或數月。
+                </div>
+                
+                <h3>與正常排尿的區別</h3>
+                <p>正常情況下，健康成人在夜間應該能夠持續睡眠6-8小時而不需要起床排尿。偶爾的夜間排尿（如飲用大量液體後）是正常的，但持續性的夜尿則需要關注。</p>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🔍</span>主要原因</h2>
+                
+                <h3>生理性原因</h3>
+                <ul>
+                    <li><strong>年齡因素：</strong>隨著年齡增長，膀胱容量減少，夜間尿液產生增加</li>
+                    <li><strong>荷爾蒙變化：</strong>抗利尿激素分泌減少，導致夜間尿液產生增加</li>
+                    <li><strong>膀胱功能變化：</strong>膀胱肌肉彈性下降，儲尿能力減弱</li>
+                </ul>
+                
+                <h3>疾病性原因</h3>
+                <ul>
+                    <li><strong>泌尿系統疾病：</strong>攝護腺肥大、膀胱炎、膀胱過動症</li>
+                    <li><strong>心血管疾病：</strong>心臟衰竭、高血壓</li>
+                    <li><strong>內分泌疾病：</strong>糖尿病、甲狀腺功能異常</li>
+                    <li><strong>神經系統疾病：</strong>帕金森氏症、脊髓損傷</li>
+                    <li><strong>睡眠障礙：</strong>睡眠呼吸暫停症候群</li>
+                </ul>
+                
+                <h3>藥物因素</h3>
+                <ul>
+                    <li>利尿劑</li>
+                    <li>血壓藥物</li>
+                    <li>某些抗憂鬱藥物</li>
+                    <li>鋰鹽類藥物</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">⚕️</span>症狀與影響</h2>
+                
+                <h3>主要症狀</h3>
+                <ul>
+                    <li>夜間頻繁起床排尿（≥2次）</li>
+                    <li>每次尿量可能正常或較少</li>
+                    <li>可能伴隨急尿感</li>
+                    <li>排尿後能夠重新入睡</li>
+                </ul>
+                
+                <h3>生活品質影響</h3>
+                <div class="highlight">
+                    <ul>
+                        <li><strong>睡眠品質下降：</strong>頻繁中斷睡眠，導致睡眠不足</li>
+                        <li><strong>日間疲勞：</strong>精神不濟，注意力不集中</li>
+                        <li><strong>情緒影響：</strong>易怒、焦慮、憂鬱</li>
+                        <li><strong>社交限制：</strong>擔心夜間症狀，影響外宿或旅行</li>
+                        <li><strong>跌倒風險：</strong>夜間摸黑如廁增加跌倒機會</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🔬</span>診斷方法</h2>
+                
+                <h3>病史詢問</h3>
+                <ul>
+                    <li>詳細的排尿習慣記錄</li>
+                    <li>液體攝取量和時間</li>
+                    <li>服用藥物清單</li>
+                    <li>相關疾病史</li>
+                    <li>睡眠品質評估</li>
+                </ul>
+                
+                <h3>檢查項目</h3>
+                <ul>
+                    <li><strong>排尿日記：</strong>記錄3-7天的排尿時間、次數、尿量</li>
+                    <li><strong>尿液分析：</strong>檢查尿路感染、糖尿病等</li>
+                    <li><strong>血液檢查：</strong>腎功能、血糖、電解質平衡</li>
+                    <li><strong>超音波檢查：</strong>膀胱、攝護腺、腎臟</li>
+                    <li><strong>尿流速測試：</strong>評估排尿功能</li>
+                    <li><strong>膀胱功能檢查：</strong>必要時進行</li>
+                </ul>
+                
+                <div class="warning">
+                    <strong>⚠️ 重要提醒：</strong><br>
+                    持續性夜尿症狀應及時就醫，特別是伴隨血尿、疼痛、發燒等症狀時，更需要立即就醫檢查。
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">💊</span>治療方法</h2>
+                
+                <h3>生活方式調整</h3>
+                <ul>
+                    <li><strong>液體管理：</strong>睡前2-3小時減少液體攝取，但全日總量需充足</li>
+                    <li><strong>飲食調整：</strong>避免睡前咖啡因、酒精、辛辣食物</li>
+                    <li><strong>排尿習慣：</strong>睡前排空膀胱，養成定時排尿習慣</li>
+                    <li><strong>體重控制：</strong>維持健康體重，減輕膀胱壓力</li>
+                    <li><strong>腿部抬高：</strong>睡前1-2小時抬高雙腿，促進體液回流</li>
+                </ul>
+                
+                <h3>藥物治療</h3>
+                <ul>
+                    <li><strong>抗利尿激素類似物：</strong>減少夜間尿液產生</li>
+                    <li><strong>抗膽鹼藥物：</strong>減少膀胱收縮，增加膀胱容量</li>
+                    <li><strong>α阻斷劑：</strong>改善攝護腺肥大引起的症狀</li>
+                    <li><strong>利尿劑調整：</strong>改變服藥時間或劑量</li>
+                </ul>
+                
+                <h3>其他治療</h3>
+                <ul>
+                    <li>膀胱訓練和骨盆底肌運動</li>
+                    <li>針對原發疾病的治療</li>
+                    <li>睡眠障礙的處理</li>
+                    <li>手術治療（嚴重的攝護腺肥大等）</li>
+                </ul>
+                
+                <div class="highlight">
+                    <strong>治療成功率：</strong><br>
+                    透過適當的診斷和治療，約80%的夜尿症患者症狀可以獲得明顯改善，生活品質也會顯著提升。
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><span class="icon">🏠</span>居家自我管理</h2>
+                
+                <h3>日常保健建議</h3>
+                <ul>
+                    <li><strong>規律作息：</strong>維持固定的睡眠時間</li>
+                    <li><strong>適度運動：</strong>改善血液循環和睡眠品質</li>
+                    <li><strong>壓力管理：</strong>學習放鬆技巧，減少焦慮</li>
+                    <li><strong>環境安全：</strong>夜間照明充足，預防跌倒</li>
+                </ul>
+                
+                <h3>排尿日記範例</h3>
+                <div class="highlight">
+                    記錄內容包括：
+                    <ul>
+                        <li>每次排尿的時間</li>
+                        <li>尿量（可用量杯測量）</li>
+                        <li>飲水量和時間</li>
+                        <li>急尿感的程度</li>
+                        <li>是否有尿失禁</li>
+                        <li>睡眠中斷次數</li>
+                    </ul>
+                </div>
+                
+                <h3>何時需要就醫</h3>
+                <ul>
+                    <li>夜尿症狀持續超過數週</li>
+                    <li>嚴重影響睡眠品質和日常生活</li>
+                    <li>伴隨其他泌尿道症狀</li>
+                    <li>血尿、疼痛或發燒</li>
+                    <li>自我管理無效</li>
+                </ul>
+                
+                <center>
+                    <button class="btn" onclick="window.open('tel:119', '_blank')">緊急就醫諮詢</button>
+                </center>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>免責聲明：</strong>本網站內容僅供參考，不能替代專業醫療建議。如有相關症狀，請諮詢合格的醫療專業人員。</p>
+            <p style="margin-top: 15px; color: #666;">© 2024 夜尿症資訊網站 - 關愛您的健康睡眠</p>
+        </footer>
+    </div>
+
+    <script>
+        // 簡單的互動功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 卡片hover效果增強
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transition = 'all 0.3s ease';
+                });
+            });
+
+            // 統計數字動畫
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                stat.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1)';
+                    this.style.transition = 'transform 0.3s ease';
+                });
+                
+                stat.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+
+            // 按鈕點擊效果
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    // 創建漣漪效果
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.cssText = `
+                        position: absolute;
+                        width: ${size}px;
+                        height: ${size}px;
+                        left: ${x}px;
+                        top: ${y}px;
+                        background: rgba(255, 255, 255, 0.5);
+                        border-radius: 50%;
+                        transform: scale(0);
+                        animation: ripple 0.6s ease-out;
+                        pointer-events: none;
+                    `;
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // 添加CSS動畫
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes ripple {
+                    to {
+                        transform: scale(2);
+                        opacity: 0;
+                    }
+                }
+                
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                
+                .card {
+                    animation: fadeInUp 0.6s ease-out;
+                }
+                
+                .card:nth-child(1) { animation-delay: 0.1s; }
+                .card:nth-child(2) { animation-delay: 0.2s; }
+                .card:nth-child(3) { animation-delay: 0.3s; }
+                .card:nth-child(4) { animation-delay: 0.4s; }
+                .card:nth-child(5) { animation-delay: 0.5s; }
+                .card:nth-child(6) { animation-delay: 0.6s; }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
